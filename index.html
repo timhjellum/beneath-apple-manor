@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+  <title>BENEATH APPLE MANOR</title>
+</head>
+
+<body>
+  <div class="bezel">
+    <div class="screen flicker">
+      <div class="title-row">
+        <h1>BENEATH APPLE MANOR</h1>
+        <div class="sub" id="depthLabel">Depth 1</div>
+      </div>
+      <div class="main-row">
+        <canvas id="dungeon" width="680" height="400"></canvas>
+        <div class="panel" id="panel"></div>
+      </div>
+      <div class="log" id="log"></div>
+      <div class="controls">
+        <div class="dpad">
+          <button class="u" data-dir="up">▲</button>
+          <button class="l" data-dir="left">◀</button>
+          <button class="c" data-dir="wait">•</button>
+          <button class="r" data-dir="right">▶</button>
+          <button class="d" data-dir="down">▼</button>
+        </div>
+        <div class="actions" id="potionButtons"></div>
+        <div class="actions">
+          <button id="descendBtn">Descend &gt;</button>
+        </div>
+      </div>
+      <div class="hint">Arrows/WASD to move &middot; bump monsters to attack &middot; walk onto &gt; then Descend &middot; number keys quaff potions</div>
+      <div class="overlay hidden" id="deathOverlay">
+        <h2 id="deathTitle">YOU HAVE FALLEN</h2>
+        <p id="deathCause"></p>
+        <p id="deathScore"></p>
+        <button id="restartBtn">Descend Again</button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
